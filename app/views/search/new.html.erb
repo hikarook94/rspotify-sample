@@ -1,2 +1,7 @@
 <h1>Search#new</h1>
 <p>Find me in app/views/search/new.html.erb</p>
+<%= form_tag search_index_path, method: :get do %>
+  <%= text_field_tag :query, params[:query] %>
+  <%= submit_tag "Search" %>
+<% end %>
+
